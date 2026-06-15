@@ -36,12 +36,12 @@
 // console.log(calculator.multiply(5, 3));
 // console.log(calculator.divide(5, 0));
 
-const person = {
-  name: "Rishav",
-  age: 23,
-  introduce() {
-    return `Hi, I am ${this.name} and I am ${this.age} years old.`;
-  } 
-};
+// const person = {
+//   name: "Rishav",
+//   age: 23,
+//   introduce() {
+//     return `Hi, I am ${this.name} and I am ${this.age} years old.`;
+//   } 
+// };
 
-console.log(person.introduce());
+// console.log(person.introduce());
