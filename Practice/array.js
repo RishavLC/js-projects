@@ -11,3 +11,7 @@ const arr = [1, 2, 3, 4, 5];
 // push() - adds an element to the end of the array
 arr.push(6);
 console.log(arr); 
+
+// pop() - removes the last element from the array
+arr.pop();
+console.log(arr);
