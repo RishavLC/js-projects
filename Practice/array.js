@@ -15,3 +15,7 @@ console.log(arr);
 // pop() - removes the last element from the array
 arr.pop();
 console.log(arr);
+
+// shift() - removes the first element from the array
+arr.shift();
+console.log(arr);   
