@@ -19,3 +19,7 @@ console.log(arr);
 // shift() - removes the first element from the array
 arr.shift();
 console.log(arr);   
+
+//unshift()
+arr.unshift();
+console.log(arr);   
