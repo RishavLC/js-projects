@@ -23,3 +23,7 @@ console.log(arr);
 //unshift()
 arr.unshift();
 console.log(arr);   
+
+//upping() - adds an element to the end of the array
+arr.unshift(0);
+console.log(arr);
