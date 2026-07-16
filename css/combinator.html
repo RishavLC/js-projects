@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Combinators</title>
+
+    <style>
+        /* 1. Descendant Combinator (space) */
+        .descendant p {
+            color: blue;
+        }
+
+        /* 2. Child Combinator (>) */
+        .child > p {
+            color: red;
+        }
+
+        /* 3. Adjacent Sibling Combinator (+) */
+        .adjacent h2 + p {
+            color: green;
+        }
+
+        /* 4. General Sibling Combinator (~) */
+        .general h2 ~ p {
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Combinators Example</h1>
+
+    <!-- Descendant Combinator -->
+    <h2>1. Descendant Combinator (space)</h2>
+    <div class="descendant">
+        <p>This paragraph becomes Blue.</p>
+
+        <section>
+            <p>This paragraph also becomes Blue.</p>
+        </section>
+    </div>
+
+    <hr>
+
+    <!-- Child Combinator -->
+    <h2>2. Child Combinator (>)</h2>
+    <div class="child">
+        <p>This paragraph becomes Red.</p>
+
+        <section>
+            <p>This paragraph is NOT selected.</p>
+        </section>
+    </div>
+
+    <hr>
+
+    <!-- Adjacent Sibling -->
+    <h2>3. Adjacent Sibling (+)</h2>
+    <div class="adjacent">
+        <h2>Heading</h2>
+        <p>This paragraph becomes Green.</p>
+        <p>This paragraph stays normal.</p>
+    </div>
+
+    <hr>
+
+    <!-- General Sibling -->
+    <h2>4. General Sibling (~)</h2>
+    <div class="general">
+        <h2>Heading</h2>
+        <p>This paragraph becomes Purple.</p>
+        <p>This paragraph also becomes Purple.</p>
+        <div>Some other element</div>
+        <p>This paragraph also becomes Purple.</p>
+    </div>
+
+</body>
+</html>
