@@ -6,4 +6,3 @@ const input = process.argv.slice(2).join(" ") || "Rishav";
 
 let reversed = input.split("").reverse().join("");
 console.log(reversed);
-

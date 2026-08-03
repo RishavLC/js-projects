@@ -21,9 +21,9 @@ arr.shift();
 console.log(arr);   
 
 //unshift()
-arr.unshift();
+arr.unshift(11);
 console.log(arr);   
 
-//upping() - adds an element to the end of the array
+//unshift() - adds an element to the start of the array
 arr.unshift(0);
 console.log(arr);
