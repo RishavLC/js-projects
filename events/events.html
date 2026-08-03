@@ -1,0 +1,61 @@
+<!-- What is an Event?
+An event is an action that happens on a webpage.
+
+Events can be :-
+A user clicking a button
+Typing in a textbox
+Moving the mouse
+Pressing a key
+Loading the page
+
+In JavaScript:
+Event: User clicks a button.
+Action: JavaScript runs a function. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <!-- click event -->
+    <button onclick="showmessage()">click me!!</button>
+
+    <!-- double click event -->
+    <button ondblclick="doubleClick()">double click me!!</button>
+
+    <!-- mouseover event -->
+    <button onmouseover="mouseOver()">mouse over me!!</button>
+
+    <!-- mouse out event -->
+    <button onmouseout="mouseOut()">mouse out me!!</button>
+
+    <!-- mousedown event -->
+    <button onmousedown="mouseDown()">mouse down me!!</button>
+
+    <!-- mouseup event -->
+    <button onmouseup="mouseUp()">mouse up me!!</button>
+
+    <!-- onkeydown event -->
+    <input type="text" onkeydown="keyDown()" placeholder="press any key">
+
+    <!-- onkeyup event -->
+    <input type="text" onkeyup="keyUp()" placeholder="release any key">
+
+    <!-- submit event -->
+    <form onsubmit="return submitForm()">
+        <input type="submit" value="Submit">
+    </form>
+
+    <button onclick="changeColor()">Change Color</button>
+
+
+    <h1 id="heart">
+
+🤍
+
+</h1>
+    <script src="events.js"></script>
+</body>
+</html>
