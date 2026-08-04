@@ -13,17 +13,17 @@ function mouseOver() {
 }
 
 function mouseOut() {
-  alert("mouse left the button!");
+  // alert("mouse left the button!");
   console.log("mouse left the button!");
 }
 
 function mouseDown() {
-  alert("mouse button pressed!");
+  // alert("mouse button pressed!");
   console.log("mouse button pressed!");
 }
 
 function mouseUp() {
-  alert("mouse button released!");
+  // alert("mouse button released!");
   console.log("mouse button released!");
 }
 

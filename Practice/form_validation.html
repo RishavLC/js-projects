@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+    span{
+        color: red;
+        }
+    </style>
+  </head>
+  <body>
+    <h2>Registration Form</h2>
+
+    <input type="text" id="username" placeholder="Username" />
+    <span id="userMsg"></span>
+
+    <br /><br />
+
+    <input type="email" id="email" placeholder="Email" />
+    <span id="emailMsg"></span>
+
+    <br /><br />
+
+    <input type="password" id="password" placeholder="Password" />
+    <span id="passwordMsg"></span>
+
+    <br /><br />
+
+    <input type="text" id="phone" placeholder="Phone Number" />
+    <span id="phoneMsg"></span>
+
+    <br /><br />
+
+    <button id="btn">Register</button>
+
+    <script>
+      let button = document.getElementById("btn");
+
+      button.addEventListener("click", function () {
+        // Clear previous messages
+        userMsg.innerHTML = "";
+        emailMsg.innerHTML = "";
+        passwordMsg.innerHTML = "";
+        phoneMsg.innerHTML = "";
+
+        let username = document.getElementById("username").value.trim();
+        let email = document.getElementById("email").value.trim();
+        let password = document.getElementById("password").value.trim();
+        let phone = document.getElementById("phone").value.trim();
+
+        // Patterns
+        let usernamePattern = /^[A-Za-z ]{3,20}$/;
+        let emailPattern = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+        let passwordPattern = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}$/;
+        let phonePattern = /^(98|97)\d{8}$/;
+
+        let valid = true;
+
+        // Username
+        if (!usernamePattern.test(username)) { //.test() checks whether the value matches the pattern.
+          userMsg.innerHTML = "Enter a valid username";
+          valid = false;
+        }
+
+        // Email
+        if (!emailPattern.test(email)) {
+          emailMsg.innerHTML = "Enter a valid email address";
+          valid = false;
+        }
+
+        // Password
+        if (!passwordPattern.test(password)) {
+          passwordMsg.innerHTML =
+            "8+ chars, 1 uppercase, 1 lowercase, 1 number";
+          valid = false;
+        }
+
+        // Phone Number
+        if (!phonePattern.test(phone)) {
+          phoneMsg.innerHTML =
+            "Phone must start with 98 or 97 and contain 10 digits";
+          valid = false;
+        }
+
+        if (valid) {
+          alert("Registration Successful");
+        }
+      });
+    </script>
+  </body>
+</html>

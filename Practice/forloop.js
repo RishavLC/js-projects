@@ -1,6 +1,6 @@
-let a = 1
+// let a = 1
 for (let i = 0; i < 5; i++) {
-    console.log(a)
+    console.log(i)
 }
 
 let n = 1
